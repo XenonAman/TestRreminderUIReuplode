@@ -59,7 +59,8 @@ import java.util.List;
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 
-public class BlankFragment extends Fragment implements IOnFocusListenable {
+public class BlankFragment extends Fragme
+        nt implements IOnFocusListenable {
 
 
     public BlankFragment() {
