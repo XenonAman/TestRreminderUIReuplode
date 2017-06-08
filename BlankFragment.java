@@ -241,7 +241,7 @@ public class BlankFragment extends Fragme
                             }
                             break;
                     }
-                }
+                }//
 
                 @Override
                 public void onCaptureCompleted(CameraCaptureSession session, CaptureRequest request, TotalCaptureResult result) {
