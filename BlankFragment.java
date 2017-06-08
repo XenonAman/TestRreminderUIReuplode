@@ -59,8 +59,7 @@ import java.util.List;
  */
 @TargetApi(Build.VERSION_CODES.LOLLIPOP)
 
-public class BlankFragment extends Fragme
-        nt implements IOnFocusListenable {
+public class BlankFragment extends Fragment implements IOnFocusListenable {
 
 
     public BlankFragment() {
@@ -236,6 +235,7 @@ public class BlankFragment extends Fragme
                             Integer afState = captureResult.get(CaptureResult.CONTROL_AF_STATE);
                             if(afState == CaptureResult.CONTROL_AF_STATE_FOCUSED_LOCKED ||
                                     afState == CaptureResult.CONTROL_AF_STATE_NOT_FOCUSED_LOCKED) {
+
                                 Toast.makeText(getContext(), "AF Locked!", Toast.LENGTH_SHORT).show();
                                 startStillCaptureRequest();
                             }
